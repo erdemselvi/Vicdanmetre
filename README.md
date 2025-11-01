@@ -1,4 +1,5 @@
 VİCDANIM - Kapsamlı Proje Analizi ve Geliştirme Planı
+
 Harika bir fikir! Ahlaki, oyunun gerçekten bağımlılık yaratıcısı, uzun soluklu bir deneyimi dönüştürmek için ayrıntılı bir mimari ve özellik seti hazırladı.
 🎯 OYUN MEKANİKLERİ VE BAĞIMLILIK SİSTEMLERİ
 1️⃣ Günlük Görev ve Streak Sistemi
