@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Vicdanmetre</string>
+    <string name="default_notification_channel_id">vicdanim_daily</string>
+
+    <!-- Home Screen -->
+    <string name="home_title">Vicdanım</string>
+    <string name="daily_quests">Günlük Görevler</string>
+    <string name="scenarios">Senaryolar</string>
+    <string name="streak_title">Günlük Seri</string>
+
+    <!-- Profile -->
+    <string name="profile_title">Profil</string>
+    <string name="conscience_profile">Vicdan Profili</string>
+    <string name="honesty">Dürüstlük</string>
+    <string name="justice">Adalet</string>
+    <string name="empathy">Empati</string>
+    <string name="responsibility">Sorumluluk</string>
+    <string name="patience">Sabır</string>
+    <string name="courage">Cesaret</string>
+    <string name="wisdom">Hikmet</string>
+
+    <!-- Badges -->
+    <string name="badges_title">Rozetler</string>
+    <string name="earned_badge">Kazanıldı</string>
+    <string name="locked_badge">Kilitli</string>
+
+    <!-- Notifications -->
+    <string name="notification_daily_title">Vicdanınla yüzleşme zamanı</string>
+    <string name="notification_daily_message">Bugün için yeni bir senaryo seni bekliyor!</string>
+    <string name="notification_streak_warning">Streak Tehlikede!</string>
+    <string name="notification_badge_unlocked">Yeni Rozet Kazandın!</string>
+
+    <!-- Common -->
+    <string name="continue_button">Devam Et</string>
+    <string name="back">Geri</string>
+    <string name="cancel">İptal</string>
+    <string name="ok">Tamam</string>
+</resources>

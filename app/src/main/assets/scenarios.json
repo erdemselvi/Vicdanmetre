@@ -1,0 +1,552 @@
+{
+  "scenarios": [
+    {
+      "id": "scenario_001",
+      "title": "Kopya Kağıdı",
+      "category": "SCHOOL",
+      "difficulty": "EASY",
+      "requiredLevel": 1,
+      "estimatedTime": 5,
+      "totalChoices": 4,
+      "unlockCost": 0,
+      "thumbnailUrl": "",
+      "chapters": [
+        {
+          "id": "ch1_001",
+          "chapterNumber": 1,
+          "title": "Sınav Sabahı",
+          "description": "Matematik sınavı öncesi",
+          "narrativeText": "Matematik sınavından 10 dakika önce sınıfa girdin. En iyi arkadaşın yanına gelip \"Kopya kağıdı hazırladım, sen de ister misin?\" diye soruyor. Sınıfta başka kimse yok.",
+          "imageUrl": "",
+          "choices": [
+            {
+              "id": "choice_001_a",
+              "text": "Kabul ediyorum, zor sorular var",
+              "conscienceImpact": {
+                "honesty": -10,
+                "courage": -5
+              },
+              "immediateConsequence": "Kopya kağıdını aldın.",
+              "longTermEffect": "",
+              "emotionalTone": "NEGATIVE"
+            },
+            {
+              "id": "choice_001_b",
+              "text": "Hayır teşekkürler, kendi bilgimle girerim",
+              "conscienceImpact": {
+                "honesty": 15,
+                "courage": 10,
+                "responsibility": 10
+              },
+              "immediateConsequence": "Arkadaşın şaşırdı ama saygı duydu.",
+              "longTermEffect": "Dürüstlüğün herkesçe takdir edildi.",
+              "emotionalTone": "POSITIVE"
+            },
+            {
+              "id": "choice_001_c",
+              "text": "Öğretmene söylerim, bu yanlış",
+              "conscienceImpact": {
+                "honesty": 20,
+                "justice": 15,
+                "courage": 20
+              },
+              "immediateConsequence": "Arkadaşın sana kızdı.",
+              "longTermEffect": "Adalet duygunu her zaman korudun.",
+              "emotionalTone": "CONFLICTED"
+            },
+            {
+              "id": "choice_001_d",
+              "text": "Hiçbir şey demeden uzaklaşıyorum",
+              "conscienceImpact": {
+                "courage": -5,
+                "responsibility": -5
+              },
+              "immediateConsequence": "Kararsız kaldın.",
+              "longTermEffect": "",
+              "emotionalTone": "NEUTRAL"
+            }
+          ],
+          "nextChapterIds": {
+            "choice_001_a": "ch2_001_bad",
+            "choice_001_b": "ch2_001_good",
+            "choice_001_c": "ch2_001_justice",
+            "choice_001_d": "ch2_001_neutral"
+          }
+        },
+        {
+          "id": "ch2_001_bad",
+          "chapterNumber": 2,
+          "title": "Yakalandın",
+          "description": "Öğretmen fark etti",
+          "narrativeText": "Sınav sırasında öğretmen sınıfta dolaşırken masanda kopya kağıdını gördü. Herkese duyulacak şekilde \"Sen benden kopya kağıdıyla mı çektin?\" diye bağırdı.",
+          "imageUrl": "",
+          "choices": [
+            {
+              "id": "choice_002_a",
+              "text": "İtiraf ediyorum ve özür diliyorum",
+              "conscienceImpact": {
+                "honesty": 15,
+                "courage": 10,
+                "responsibility": 10
+              },
+              "immediateConsequence": "Öğretmen sınava giremeyeceğini söyledi ama dürüstlüğünü takdir etti.",
+              "longTermEffect": "",
+              "emotionalTone": "CONFLICTED"
+            },
+            {
+              "id": "choice_002_b",
+              "text": "İnkar ediyorum, benim değil",
+              "conscienceImpact": {
+                "honesty": -15,
+                "courage": -10
+              },
+              "immediateConsequence": "Öğretmen inanmadı, disipline sevk edildin.",
+              "longTermEffect": "",
+              "emotionalTone": "NEGATIVE"
+            }
+          ],
+          "nextChapterIds": {
+            "choice_002_a": "ch3_001_end",
+            "choice_002_b": "ch3_001_end"
+          }
+        },
+        {
+          "id": "ch2_001_good",
+          "chapterNumber": 2,
+          "title": "Sınav Bitti",
+          "description": "Dürüstlüğünün sonucu",
+          "narrativeText": "Sınavı kendi bilginle çözdün. Bazı sorulara cevap veremesen de vicdanın rahattı. Sınav sonrası arkadaşın gelip \"Keşke senin gibi cesur olabilseydim\" dedi.",
+          "imageUrl": "",
+          "choices": [
+            {
+              "id": "choice_003_a",
+              "text": "Ona dürüstlüğün önemini anlatırım",
+              "conscienceImpact": {
+                "wisdom": 15,
+                "empathy": 10
+              },
+              "immediateConsequence": "Arkadaşın seni dinledi ve bir dahaki sefere kopya çekmeyeceğine söz verdi.",
+              "longTermEffect": "",
+              "emotionalTone": "POSITIVE"
+            },
+            {
+              "id": "choice_003_b",
+              "text": "Üstüne varmam, herkes kendi yolunu bulur",
+              "conscienceImpact": {
+                "patience": 5
+              },
+              "immediateConsequence": "Arkadaşın kendi kendine düşündü.",
+              "longTermEffect": "",
+              "emotionalTone": "NEUTRAL"
+            }
+          ],
+          "nextChapterIds": {
+            "choice_003_a": "ch3_001_end",
+            "choice_003_b": "ch3_001_end"
+          }
+        },
+        {
+          "id": "ch2_001_justice",
+          "chapterNumber": 2,
+          "title": "Öğretmenin Tepkisi",
+          "description": "Adalet için konuştun",
+          "narrativeText": "Öğretmene durumu anlattın. Öğretmen arkadaşını sorguladı ve kopya kağıdını buldu. Arkadaşın sınava giremedi ve sana çok kızdı. Diğer arkadaşların ise seni 'ispiyoncu' olarak görmeye başladı.",
+          "imageUrl": "",
+          "choices": [
+            {
+              "id": "choice_004_a",
+              "text": "Yaptığım doğruydu, pişman değilim",
+              "conscienceImpact": {
+                "justice": 20,
+                "courage": 15,
+                "wisdom": 10
+              },
+              "immediateConsequence": "İçin rahat ama sosyal olarak yalnızlaştın.",
+              "longTermEffect": "",
+              "emotionalTone": "CONFLICTED"
+            },
+            {
+              "id": "choice_004_b",
+              "text": "Belki de karışmamalıydım...",
+              "conscienceImpact": {
+                "courage": -10,
+                "responsibility": -5
+              },
+              "immediateConsequence": "Pişmanlık hissediyorsun.",
+              "longTermEffect": "",
+              "emotionalTone": "NEGATIVE"
+            }
+          ],
+          "nextChapterIds": {
+            "choice_004_a": "ch3_001_end",
+            "choice_004_b": "ch3_001_end"
+          }
+        },
+        {
+          "id": "ch2_001_neutral",
+          "chapterNumber": 2,
+          "title": "Sessizlik",
+          "description": "Kaçış",
+          "narrativeText": "Hiçbir şey yapmadın. Sınav oldu geçti. Ama içinde bir huzursuzluk var.",
+          "imageUrl": "",
+          "choices": [],
+          "nextChapterIds": {}
+        },
+        {
+          "id": "ch3_001_end",
+          "chapterNumber": 3,
+          "title": "Vicdan Muhasebesi",
+          "description": "Senaryo sonu",
+          "narrativeText": "Bir hafta sonra sınav sonuçları açıklandı. Durumun ne olursa olsun, hayatta en önemli şeyin dürüstlük ve kendi değerlerine sadık kalmak olduğunu öğrendin.",
+          "imageUrl": "",
+          "choices": [],
+          "nextChapterIds": {}
+        }
+      ]
+    },
+    {
+      "id": "scenario_002",
+      "title": "Kayıp Cüzdan",
+      "category": "SOCIETY",
+      "difficulty": "EASY",
+      "requiredLevel": 1,
+      "estimatedTime": 6,
+      "totalChoices": 4,
+      "unlockCost": 0,
+      "thumbnailUrl": "",
+      "chapters": [
+        {
+          "id": "ch1_002",
+          "chapterNumber": 1,
+          "title": "Buluntu",
+          "description": "Yolda bir cüzdan buldun",
+          "narrativeText": "Okuldan eve dönerken yolda bir cüzdan görüyorsun. İçinde 500 TL para, kimlik kartı ve kredi kartları var. Sahibi Ahmet Yılmaz adında 65 yaşında bir adam.",
+          "imageUrl": "",
+          "choices": [
+            {
+              "id": "choice_005_a",
+              "text": "Cüzdanı alıp sahibini bulmaya çalışırım",
+              "conscienceImpact": {
+                "honesty": 20,
+                "empathy": 15,
+                "responsibility": 15
+              },
+              "immediateConsequence": "Cüzdanı aldın ve içindeki bilgilere baktın.",
+              "longTermEffect": "İnsanlara yardım etmek seni mutlu etti.",
+              "emotionalTone": "POSITIVE"
+            },
+            {
+              "id": "choice_005_b",
+              "text": "Parayı alıp cüzdanı bırakırım",
+              "conscienceImpact": {
+                "honesty": -20,
+                "empathy": -10
+              },
+              "immediateConsequence": "Parayı cebine koydun.",
+              "longTermEffect": "",
+              "emotionalTone": "NEGATIVE"
+            },
+            {
+              "id": "choice_005_c",
+              "text": "Polise teslim ederim",
+              "conscienceImpact": {
+                "honesty": 20,
+                "justice": 15,
+                "responsibility": 10
+              },
+              "immediateConsequence": "Karakola yöneldin.",
+              "longTermEffect": "",
+              "emotionalTone": "POSITIVE"
+            },
+            {
+              "id": "choice_005_d",
+              "text": "Görmedim, geçerim",
+              "conscienceImpact": {
+                "empathy": -10,
+                "responsibility": -10
+              },
+              "immediateConsequence": "Cüzdanı bırakıp gittin.",
+              "longTermEffect": "",
+              "emotionalTone": "NEUTRAL"
+            }
+          ],
+          "nextChapterIds": {
+            "choice_005_a": "ch2_002_search",
+            "choice_005_b": "ch2_002_guilt",
+            "choice_005_c": "ch2_002_police",
+            "choice_005_d": "ch2_002_end"
+          }
+        },
+        {
+          "id": "ch2_002_search",
+          "chapterNumber": 2,
+          "title": "Arama",
+          "description": "Sahibini arıyorsun",
+          "narrativeText": "Kimlikte adres var. Eve gitmeye karar verdin. 30 dakikalık yürüyüş sonrası küçük bir evin kapısını çalıyorsun. Yaşlı bir adam kapıyı açıyor.",
+          "imageUrl": "",
+          "choices": [
+            {
+              "id": "choice_006_a",
+              "text": "Cüzdanı teslim ediyorum",
+              "conscienceImpact": {
+                "honesty": 25,
+                "empathy": 20,
+                "wisdom": 10
+              },
+              "immediateConsequence": "Adam gözyaşlarıyla teşekkür etti. 'Bu para emekli maaşımdı' dedi.",
+              "longTermEffect": "",
+              "emotionalTone": "POSITIVE"
+            }
+          ],
+          "nextChapterIds": {
+            "choice_006_a": "ch3_002_reward"
+          }
+        },
+        {
+          "id": "ch2_002_guilt",
+          "chapterNumber": 2,
+          "title": "Pişmanlık",
+          "description": "Para cebinde ama...",
+          "narrativeText": "Parayı aldın ama vicdan azabı çekiyorsun. Gece uyuyamıyorsun. Sabah gazeteyi açtığında 'Emekli vatandaşın maaşı çalındı' başlığını görüyorsun.",
+          "imageUrl": "",
+          "choices": [
+            {
+              "id": "choice_007_a",
+              "text": "Parayı geri götürürüm",
+              "conscienceImpact": {
+                "honesty": 10,
+                "courage": 15,
+                "responsibility": 10
+              },
+              "immediateConsequence": "Adrese gittin ve özür dileyerek parayı verdin.",
+              "longTermEffect": "",
+              "emotionalTone": "CONFLICTED"
+            },
+            {
+              "id": "choice_007_b",
+              "text": "Çok geç, artık saklayacağım",
+              "conscienceImpact": {
+                "honesty": -15,
+                "courage": -10,
+                "wisdom": -10
+              },
+              "immediateConsequence": "Parayı harcadın ama vicdan azabın devam etti.",
+              "longTermEffect": "",
+              "emotionalTone": "NEGATIVE"
+            }
+          ],
+          "nextChapterIds": {
+            "choice_007_a": "ch3_002_end",
+            "choice_007_b": "ch3_002_end"
+          }
+        },
+        {
+          "id": "ch2_002_police",
+          "chapterNumber": 2,
+          "title": "Karakol",
+          "description": "Polise teslim ettin",
+          "narrativeText": "Polisler cüzdanı aldı ve teşekkür etti. 'Sahibini bulup arayacağız' dediler. İki gün sonra yaşlı adam seni arıyor ve çok teşekkür ediyor.",
+          "imageUrl": "",
+          "choices": [
+            {
+              "id": "choice_008_a",
+              "text": "Görevimdi, önemli değil derim",
+              "conscienceImpact": {
+                "wisdom": 10,
+                "empathy": 10
+              },
+              "immediateConsequence": "Adam çok duygulandı.",
+              "longTermEffect": "",
+              "emotionalTone": "POSITIVE"
+            }
+          ],
+          "nextChapterIds": {
+            "choice_008_a": "ch3_002_end"
+          }
+        },
+        {
+          "id": "ch3_002_reward",
+          "chapterNumber": 3,
+          "title": "Ödül Teklifi",
+          "description": "Adam ödül vermek istiyor",
+          "narrativeText": "Yaşlı adam sana 100 TL ödül vermek istiyor. 'Lütfen kabul et, bu benim için çok önemliydi' diyor.",
+          "imageUrl": "",
+          "choices": [
+            {
+              "id": "choice_009_a",
+              "text": "Kabul etmiyorum, görevimdi",
+              "conscienceImpact": {
+                "honesty": 15,
+                "wisdom": 15
+              },
+              "immediateConsequence": "Adam sana dua etti.",
+              "longTermEffect": "",
+              "emotionalTone": "POSITIVE"
+            },
+            {
+              "id": "choice_009_b",
+              "text": "Kabul ediyorum ama hayır kurumuna bağışlayacağım",
+              "conscienceImpact": {
+                "empathy": 20,
+                "wisdom": 15
+              },
+              "immediateConsequence": "Adam seninle birlikte bağışı yaptı.",
+              "longTermEffect": "",
+              "emotionalTone": "POSITIVE"
+            }
+          ],
+          "nextChapterIds": {
+            "choice_009_a": "ch4_002_end",
+            "choice_009_b": "ch4_002_end"
+          }
+        },
+        {
+          "id": "ch3_002_end",
+          "chapterNumber": 3,
+          "title": "Ders",
+          "description": "Senaryo sonu",
+          "narrativeText": "Dürüstlük ve empati, insanın en değerli hazinesidir. Küçük bir eylem, birinin hayatını değiştirebilir.",
+          "imageUrl": "",
+          "choices": [],
+          "nextChapterIds": {}
+        },
+        {
+          "id": "ch4_002_end",
+          "chapterNumber": 4,
+          "title": "Vicdan Huzuru",
+          "description": "Senaryo sonu",
+          "narrativeText": "Doğru olanı yaptın ve karşılığını vicdan huzuru olarak aldın. İnsanlığın en güzel yönlerini gösterdin.",
+          "imageUrl": "",
+          "choices": [],
+          "nextChapterIds": {}
+        },
+        {
+          "id": "ch2_002_end",
+          "chapterNumber": 2,
+          "title": "Kayıp Fırsat",
+          "description": "Senaryo sonu",
+          "narrativeText": "Bazen karışmamak da bir seçimdir. Ama unutma, her kayıtsızlık birinin acısına sebep olabilir.",
+          "imageUrl": "",
+          "choices": [],
+          "nextChapterIds": {}
+        }
+      ]
+    },
+    {
+      "id": "scenario_003",
+      "title": "Siber Zorbalık",
+      "category": "SOCIAL_MEDIA",
+      "difficulty": "MEDIUM",
+      "requiredLevel": 3,
+      "estimatedTime": 7,
+      "totalChoices": 4,
+      "unlockCost": 0,
+      "thumbnailUrl": "",
+      "chapters": [
+        {
+          "id": "ch1_003",
+          "chapterNumber": 1,
+          "title": "Grup Sohbeti",
+          "description": "Sınıf WhatsApp grubu",
+          "narrativeText": "Sınıf WhatsApp grubunda Ayşe'nin paylaştığı selfie'ye karşı alay içerikli yorumlar yapılmaya başlandı. 5-6 kişi kötü şeyler yazıyor.",
+          "imageUrl": "",
+          "choices": [
+            {
+              "id": "choice_010_a",
+              "text": "Ayşe'yi savunurum ve zorbalara karşı çıkarım",
+              "conscienceImpact": {
+                "courage": 25,
+                "empathy": 20,
+                "justice": 15
+              },
+              "immediateConsequence": "Zorbalara karşı durduğun için bazıları sana da saldırdı.",
+              "longTermEffect": "Ayşe seni hiç unutmadı ve her zaman minnettar kaldı.",
+              "emotionalTone": "CONFLICTED"
+            },
+            {
+              "id": "choice_010_b",
+              "text": "Ayşe'ye özel mesaj atıp destek olurum",
+              "conscienceImpact": {
+                "empathy": 15,
+                "wisdom": 10
+              },
+              "immediateConsequence": "Ayşe teşekkür etti ama grup saldırısı devam ediyor.",
+              "longTermEffect": "",
+              "emotionalTone": "POSITIVE"
+            },
+            {
+              "id": "choice_010_c",
+              "text": "Grubu sessize alıp karışmam",
+              "conscienceImpact": {
+                "courage": -10,
+                "empathy": -10,
+                "responsibility": -10
+              },
+              "immediateConsequence": "Sessiz kaldın.",
+              "longTermEffect": "",
+              "emotionalTone": "NEUTRAL"
+            },
+            {
+              "id": "choice_010_d",
+              "text": "Ben de dalga geçerim",
+              "conscienceImpact": {
+                "empathy": -25,
+                "honesty": -15,
+                "wisdom": -20
+              },
+              "immediateConsequence": "Gruba katıldın.",
+              "longTermEffect": "",
+              "emotionalTone": "NEGATIVE"
+            }
+          ],
+          "nextChapterIds": {
+            "choice_010_a": "ch2_003_hero",
+            "choice_010_b": "ch2_003_support",
+            "choice_010_c": "ch2_003_silent",
+            "choice_010_d": "ch2_003_bully"
+          }
+        },
+        {
+          "id": "ch2_003_hero",
+          "chapterNumber": 2,
+          "title": "Kahramanlık",
+          "description": "Savunma",
+          "narrativeText": "Saldırganlar sana da yüklendi ama Ayşe ve birkaç arkadaşın seni destekledi. Grup yöneticisi duruma müdahale etti.",
+          "imageUrl": "",
+          "choices": [],
+          "nextChapterIds": {}
+        },
+        {
+          "id": "ch2_003_support",
+          "chapterNumber": 2,
+          "title": "Destek",
+          "description": "Yalnız değil",
+          "narrativeText": "Ayşe senin desteğini hissetti. Ertesi gün okulda sana teşekkür etti.",
+          "imageUrl": "",
+          "choices": [],
+          "nextChapterIds": {}
+        },
+        {
+          "id": "ch2_003_silent",
+          "chapterNumber": 2,
+          "title": "Sessizlik",
+          "description": "Kayıtsızlık",
+          "narrativeText": "Ayşe okulu bıraktı. Sessiz kalmanın da bir seçim olduğunu öğrendin.",
+          "imageUrl": "",
+          "choices": [],
+          "nextChapterIds": {}
+        },
+        {
+          "id": "ch2_003_bully",
+          "chapterNumber": 2,
+          "title": "Zorba",
+          "description": "Pişmanlık",
+          "narrativeText": "Ayşe okulu bıraktı. Sen de bu olayın bir parçasıydın.",
+          "imageUrl": "",
+          "choices": [],
+          "nextChapterIds": {}
+        }
+      ]
+    }
+  ]
+}
